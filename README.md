@@ -12,15 +12,22 @@
 [Backend](#backend "Goto backend") |
 [Seeding Data](#seeding-data "Goto seeding data") |
 [Frontend](#frontend "Goto frontend") |
-[Rehoming Info & Questionnaire page](#rehoming-info-&-questionnaire-page "Goto Rehoming Info & Questionnaire page") |
-
-
-[Home Page](#home-page "Goto home page") |
+[Rehoming Info & Questionnaire](#rehoming-info-and-questionnaire "Goto rehoming info & questionnaire") |
+[How to adopt a dog](#how-to-adopt-a-dog "Goto how to adopt a dog") |
+[Donate Now](#donate-now "Goto donate now") |
+[Register and Login](#register-and-login "Goto register and login") |
+[Filtering Dogs](#filtering-dogs "Goto filtering dogs") |
+[Favouriting Dogs](#favouriting-dogs "Goto favouriting dogs") |
+[Questions](#questions "Goto questions") |
+[Error Handling](#error-handling "Goto error handling") |
+[About Us](#about-us "Goto about us") |
+[Newsletter](#newsletter "Goto newsletter") |
+[Profile](#profile "Goto profile") |
 [Challenges](#challenges "Goto challenges") |
-[Wins](#wins "Goto wins") |
 [Bugs](#bugs "Goto bugs") |
-[Key Learnings](#key-learnings "Goto key-learnings") |
-[Future Content and Improvements](#future-content-and-improvements "Goto future-content-and-improvements")
+[Future Improvements](#future-improvements "Goto future-improvements") |
+[Wins and Key Learnings](#wins-and-key-learnings "Goto wins and key learnings") 
+
 
 ## Overview:
 Pawhub is a full-stack app based on the Dog Trust website. The site features a gallery of dogs available for adoption. The Backend was built using Django and Python, the Frontend was React.js.
@@ -172,7 +179,7 @@ The main pages I built were:\
 [**How to adopt a dog**](https://pawhubz.netlify.app/rehoming)\
 [**Donate Now**](https://pawhubz.netlify.app/donation)
 
-## Rehoming Info & Questionnaire page:
+## Rehoming Info and Questionnaire:
 This was my first task, in cloning and recreating this page from the [**original**](https://forms.office.com/Pages/ResponsePage.aspx?id=CF91GvsdcUyzOIntd7Ndg-St0xtO4xxMmwbzNDsShYdURDdHTDlDN0tUMVdEWlhMUzQ2NzlRU0tBRCQlQCN0PWcu), we felt that the original page didn't really have any personality, so I was tasked with using the available information to recreate the page so that it would sit in better with the rest of the site.
 
 The initial information was lifted from the original site, but laid out in a cleaner way. 
@@ -226,21 +233,21 @@ Example code below for one of 29 questions...
 </fieldset>
 ```
 
-## How to adopt a dog page:
+## How to adopt a dog:
 This page serves as an information page to guide the user through the process of how to adopt a dog.
 
 The [**original**](https://www.dogstrust.org.uk/rehoming/how-to-adopt) is similar to how I have built ours. Keeping within the scope of this project, we only chose to keep the relevant information for this page.
 ![adopt](/src/assets/adopt.png)
 
 
-## Donate Now page:
+## Donate Now:
 The original website relies heavily on donations, so we wanted to include this feature within our app (note: our version does not have an end point for real payment).
 
 The [**original**](https://www.dogstrust.org.uk/latest/latest-appeal/break-the-silence-cold) is similar to how I have built ours also. This page required different buttons to display different donation amounts to end up in the final amount. 
 ![donate](/src/assets/donate.png)
 
 
-## Register / Login:
+## Register and Login:
 The traditional user UX of Register to Login sequence would normally be after successful registration, user would then be navigated to the Login page to enter details. This step has been simplified by allowing the user to automatically be logged in after registration. This is achieved by setting the login data into state. 
 
 ```js
@@ -374,49 +381,10 @@ This page is only available to logged in users and is specific to the userId. Th
 * success stories
 * question submitted to add date/timestamp
 
-## Wins & Key Learnings:
+## Wins and Key Learnings:
 * This project reinforced the importance of clear communication and collaboration when working within a team
 * This final project allowed me to work with some great people who I hope will go on to have successful careers
 * Taking on new frameworks for important projects is something I will avoid going forward (as learning a new framework whilst trying to work towards a deadline can be risky)
 * The app is fully mobile responsive
 * Testing the app over and over, we tested each page at every screen size from desktop to tablet to mobiles - important for any deployment
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Update the Proxy Server
-
-By default, the proxy server is set up to point at port 8000, if you need to do so update in `setupProxy.js` where commented.
-
-## Using NPM
-
-`npm run start` or `npm run dev`  to run the development server
-
-`npm run build` to create a build directory
-
-## Using Yarn
-
-`yarn start` or `yarn dev`  to run the development server
-
-`yarn build` to create a build directory
-
-### ⚠️
-
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
