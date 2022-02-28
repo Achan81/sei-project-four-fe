@@ -23,7 +23,7 @@
 [Future Content and Improvements](#future-content-and-improvements "Goto future-content-and-improvements")
 
 ## Overview:
-Pawhub is a full-stack app based on the Dog Trust website. The site features a gallery of dogs available for adoption. The backend was built using Django and Pythonm the frontend was React.js.
+Pawhub is a full-stack app based on the Dog Trust website. The site features a gallery of dogs available for adoption. The Backend was built using Django and Python, the Frontend was React.js.
 <br></br>
 This was a one-week group project built in collaboration with [**Alex Theoklitou**](https://github.com/alextheoklitou), [**Joe Freeman**](https://github.com/joefreeman8) and [**Mike Salter**](https://github.com/Msalter91/). 
 
@@ -57,14 +57,14 @@ This app has been deployed on Netlify and can be found [**here**](https://pawhub
 
 ## Approach:
 ### Planning:
-For this one week project we were given the opportunity to choose if we wanted to work in teams or work solo. The four of us had not collaborated together before, so we decided to work together for our final project. Our personal goal was to make a website that operated smoothly and allowed us to pull together all our skills build a beautiful multi functioning website. Cloning an App was also something we had never done before, so felt this would be a fun and interesting challenge.
+For this one week project we were given the opportunity to choose if we wanted to work in teams or work solo. The four of us had not collaborated together before, so we decided to work together for our final project. Our personal goal was to make a website that operated smoothly and allowed us to pull together all our skills to build a beautiful multi functioning website. Cloning an App was also something we had never done before, so felt this would be a fun and interesting challenge.
 
 After deciding on a clone app of a dog rehoming site, we firstly planned out our models 
 using an [**ERD planner**](https://app.quickdatabasediagrams.com) and used this to visually display our model relationships in the backend.
 
 ![wireframe](/src/assets/wireframe.png)
 
-We also use a virtual whiteboard (Miro) to collaboratively add to-do lists, add comments and sketch ideas on to one page.
+We also use a virtual whiteboard (Miro) to collaboratively add to-do lists, add comments and sketch ideas onto one page.
 
 ![miro](/src/assets/miro.png)
 
@@ -178,7 +178,7 @@ This was my first task, in cloning and recreating this page from the [**original
 The initial information was lifted from the original site, but laid out in a cleaner way. 
 ![rehoming](/src/assets/rehoming.png)
 
-The questionnaire was selectively rebuilt for the purpose of our app, again laid out in a cleaner way (our version ended up with 29 questions, as opposed to the 60+ on original site).
+The questionnaire was selectively rebuilt for the purpose of our app, again laid out in a cleaner way (our version ended up with 29 questions, as opposed to the 60+ on the original site).
 
 ![rehoming-questionnaire](/src/assets/rehoming-questionnaire.png)
 
@@ -227,7 +227,7 @@ Example code below for one of 29 questions...
 ```
 
 ## How to adopt a dog page:
-This page serves as a information page to guide the user through the process of how to adopt a dog.
+This page serves as an information page to guide the user through the process of how to adopt a dog.
 
 The [**original**](https://www.dogstrust.org.uk/rehoming/how-to-adopt) is similar to how I have built ours. Keeping within the scope of this project, we only chose to keep the relevant information for this page.
 ![adopt](/src/assets/adopt.png)
@@ -264,7 +264,7 @@ The traditional user UX of Register to Login sequence would normally be after su
  ```
 
 ## Filtering Dogs: 
-The key functionality of the website is how to navigate through all the available dogs. Our filtering methods on PawHub enables the user to not only filter on an individual field, but they can also group these together for a more specific search. It is important to note that, this was made by possible by the initial planning of searchable categories covered at the Backend seeding stage. 
+The key functionality of the website is how to navigate through all the available dogs. Our filtering methods on PawHub enables the user to not only filter on an individual field, but they can also group these together for a more specific search. It is important to note that this was made by possible by the initial planning of searchable categories covered at the Backend seeding stage. 
 ![filter](/src/assets/filter.png)
 ```js
 const filteredDogs = (dogs) => {
@@ -279,7 +279,7 @@ const filteredDogs = (dogs) => {
 ```
 
 ## Favouriting Dogs:
-This function only exists for users who are registered and logged in. Once logged in, a purple heart tickable icon is visible next to selected dogs show page. Clicking the heart will add this dog to your favourites, which are accessible on the Profile page.
+This function only exists for users who are registered and logged in. Once logged in, a purple heart tickable icon is visible next to the selected dogs show page. Clicking the heart will add this dog to your favourites, which are accessible on the Profile page.
 ![heart](/src/assets/heart.png)
 ```js
  const handleFavorite = async () => {
@@ -303,7 +303,7 @@ This function only exists for users who are registered and logged in. Once logge
 ```
 
 ## Questions:
-Another logged in only feature - whilst viewing a specific dog, the user is able to submit quesions directly.
+Another logged in only feature - whilst viewing a specific dog, the user is able to submit questions directly.
 ![questions](/src/assets/questions.png)
 ```js
  const handleSubmit = async (e) => {
@@ -318,7 +318,7 @@ Another logged in only feature - whilst viewing a specific dog, the user is able
 ```
 
 ## Error Handling:
-The error handling on PawHub had a helpful hand with this because of [**httpstatusdogs.com**](httpstatusdogs.com) conveniently covered early on in our SEI course.
+The error handling on PawHub had a helpful hand with this because [**httpstatusdogs.com**](httpstatusdogs.com) conveniently covered early on in our SEI course.
 
 ![error](/src/assets/error.png)
 ```js
@@ -358,7 +358,7 @@ This page is only available to logged in users and is specific to the userId. Th
 ![profile](/src/assets/profile.png)
 
 ## Challenges:
-* Working with Tailwind for the first time, was scary for me. I thought I would pick it up quickly because of my limited experience with Bootstrap and Bulma, but I was wrong.  After spending time referencing the documentation I was able to build. 
+* Working with Tailwind for the first time was scary for me. I thought I would pick it up quickly because of my limited experience with Bootstrap and Bulma, but I was wrong.  After spending time referencing the documentation I was able to build. 
 * Working in a large team, I found that everyone working on different sections, whether Frontend or Backend was ont the easiest to keep on top of. Some changes made would not be noticable - which would hinder personal growth and understanding
 
 ## Bugs:
@@ -375,9 +375,9 @@ This page is only available to logged in users and is specific to the userId. Th
 * question submitted to add date/timestamp
 
 ## Wins & Key Learnings:
-* This project reinforced the importance communication and collaboration when working within a team. 
+* This project reinforced the importance of clear communication and collaboration when working within a team
 * This final project allowed me to work with some great people who I hope will go on to have successful careers
-* Taking on new frameworks for important projects is something I will avoid going forward (as learning a new frame work whilst trying to work towards a deadline is dangerous)
+* Taking on new frameworks for important projects is something I will avoid going forward (as learning a new framework whilst trying to work towards a deadline can be risky)
 * The app is fully mobile responsive
 * Testing the app over and over, we tested each page at every screen size from desktop to tablet to mobiles - important for any deployment
 
