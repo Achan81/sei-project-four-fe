@@ -15,7 +15,7 @@
 [Rehoming Info & Questionnaire](#rehoming-info-and-questionnaire "Goto rehoming info & questionnaire") |
 [How to adopt a dog](#how-to-adopt-a-dog "Goto how to adopt a dog") |
 [Donate Now](#donate-now "Goto donate now") |
-[Register and Login](#register-and-login "Goto register and login") |
+[Register & Login](#register-and-login "Goto register & login") |
 [Filtering Dogs](#filtering-dogs "Goto filtering dogs") |
 [Favouriting Dogs](#favouriting-dogs "Goto favouriting dogs") |
 [Questions](#questions "Goto questions") |
@@ -27,7 +27,6 @@
 [Bugs](#bugs "Goto bugs") |
 [Future Improvements](#future-improvements "Goto future-improvements") |
 [Wins and Key Learnings](#wins-and-key-learnings "Goto wins and key learnings") 
-
 
 ## Overview:
 Pawhub is a full-stack app based on the Dog Trust website. The site features a gallery of dogs available for adoption. The Backend was built using Django and Python, the Frontend was React.js.
@@ -64,19 +63,19 @@ This app has been deployed on Netlify and can be found [**here**](https://pawhub
 
 ## Approach:
 ### Planning:
-For this one week project we were given the opportunity to choose if we wanted to work in teams or work solo. The four of us had not collaborated together before, so we decided to work together for our final project. Our personal goal was to make a website that operated smoothly and allowed us to pull together all our skills to build a beautiful multi functioning website. Cloning an App was also something we had never done before, so felt this would be a fun and interesting challenge.
+For this one week project, we were given the opportunity to choose if we wanted to work in teams or work solo. The four of us had not collaborated together before, so we decided to work together for our final project. Our personal goal was to make a website that operated smoothly and allowed us to pull together all our skills to build a beautiful multi functioning website. Cloning an App was also something we had never done before, so felt this would be a fun and interesting challenge.
 
 After deciding on a clone app of a dog rehoming site, we firstly planned out our models 
 using an [**ERD planner**](https://app.quickdatabasediagrams.com) and used this to visually display our model relationships in the backend.
 
 ![wireframe](/src/assets/wireframe.png)
 
-We also use a virtual whiteboard (Miro) to collaboratively add to-do lists, add comments and sketch ideas onto one page.
+We also used a virtual whiteboard (Miro) to collaboratively add to-do lists, add comments and sketch ideas onto one page.
 
 ![miro](/src/assets/miro.png)
 
 ## Work Split:
-We split the roles of Backend and Frontend evenly so everybody played a full stack role on this project. During the project we were in constant communication with one another on Zoom and Slack. We scheduled daily morning stand-up sessions could talk about wins, discuss challenges, and plan the day ahead. 
+We split the roles of Backend and Frontend evenly so everybody played a full stack role on this project. During the project, we were in constant communication with one another on Zoom and Slack. We scheduled daily morning stand-up sessions to talk about wins, discuss challenges, and plan the day ahead. 
 
 Backend was done as a team, but each member took the lead on separate occasions, see Backend section below. 
 
@@ -248,7 +247,7 @@ The [**original**](https://www.dogstrust.org.uk/latest/latest-appeal/break-the-s
 
 
 ## Register and Login:
-The traditional user UX of Register to Login sequence would normally be after successful registration, user would then be navigated to the Login page to enter details. This step has been simplified by allowing the user to automatically be logged in after registration. This is achieved by setting the login data into state. 
+The traditional user UX of Register to Login sequence would normally be after successful registration, the user would then be navigated to the Login page to enter details. This step has been simplified by allowing the user to automatically be logged in after registration. This is achieved by setting the login data into state. 
 
 ```js
  const handleChange = (e) => {
@@ -271,7 +270,7 @@ The traditional user UX of Register to Login sequence would normally be after su
  ```
 
 ## Filtering Dogs: 
-The key functionality of the website is how to navigate through all the available dogs. Our filtering methods on PawHub enables the user to not only filter on an individual field, but they can also group these together for a more specific search. It is important to note that this was made by possible by the initial planning of searchable categories covered at the Backend seeding stage. 
+The key functionality of the website is how to navigate through all the available dogs. Our filtering methods on PawHub enables the user to not only filter on an individual field, but they can also group these together for a more specific search. It is important to note that this was made possible by the initial planning of searchable categories covered at the Backend seeding stage. 
 ![filter](/src/assets/filter.png)
 ```js
 const filteredDogs = (dogs) => {
@@ -356,7 +355,7 @@ function Error({ error }) {
 ![fundraiser](/src/assets/fundraiser.png)
 
 ## Newsletter: 
-A form to be contacted by Pawhub which is set up to send out an email to the email address submitted
+A basic sign-up form to be contacted by Pawhub which is set-up to automatically send out an email to the submitted email address.
 ![newsletter](/src/assets/newsletter.png)
 ![email](/src/assets/email.png)
 
@@ -365,11 +364,11 @@ This page is only available to logged in users and is specific to the userId. Th
 ![profile](/src/assets/profile.png)
 
 ## Challenges:
-* Working with Tailwind for the first time was scary for me. I thought I would pick it up quickly because of my limited experience with Bootstrap and Bulma, but I was wrong.  After spending time referencing the documentation I was able to build. 
-* Working in a large team, I found that everyone working on different sections, whether Frontend or Backend was ont the easiest to keep on top of. Some changes made would not be noticable - which would hinder personal growth and understanding
+* Working with Tailwind for the first time was scary for me. I thought I would pick it up quickly because of my experience with Bootstrap and Bulma, but I was wrong.  After spending time referencing the documentation I was able overcome this
+* Working in a large team, I found that everyone working on different sections, whether Frontend or Backend, was not the easiest to stay on top of. Some changes made would not be noticable without constant communication or full awareness of branch update on GitHub
 
 ## Bugs:
-* Firefox & Safari doesn’t allow for the custom fonts to load, so Google Chrome is currently the preferred browser for viewing this app
+* Firefox & Safari does not allow for the custom fonts to load, so Google Chrome is currently the preferred browser for viewing this app
 * The carousel features sometimes break, causing the images to be lost
 
 ## Future Improvements:
@@ -388,3 +387,7 @@ This page is only available to logged in users and is specific to the userId. Th
 * The app is fully mobile responsive
 * Testing the app over and over, we tested each page at every screen size from desktop to tablet to mobiles - important for any deployment
 
+<br></br>
+<hr></hr>
+
+[Back to TOP](#overview "Goto overview")
